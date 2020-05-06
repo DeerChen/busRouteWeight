@@ -86,7 +86,7 @@ def main():
     @return: 
     @author: Senkita
     '''
-    filePath = '公交站点信息.csv'
+    filePath = './src/公交站点信息.csv'
     df = file2df(filePath)
     stopWeight, busSet = nodeWeight(df)
     save2json(stopWeight, 'stopWeight')
